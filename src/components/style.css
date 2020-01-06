@@ -210,12 +210,13 @@ footer {
   user-select: none;
 }
 
-header h1 {
+.logo {
+  font-size: 40px;
   font-weight: 300;
   color: #fff;
   border: 0.1rem solid #fff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px 10px;
   display: inline-block;
   animation: flicker 1.5s infinite alternate;
 }
@@ -226,17 +227,17 @@ header h1 {
   --neon-border-color: rgb(185, 213, 238);
 }
 
-header h1::-moz-selection {
+.logo::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-header h1::selection {
+.logo::selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-header h1:focus {
+.logo:focus {
   outline: none;
 }
 
@@ -277,4 +278,15 @@ header h1:focus {
   margin-top: 15px;
   margin-left: 10px;
   outline: none;
+}
+
+.seoImage {
+  width: 300px;
+}
+.seoPageBtn {
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 2px;
 }

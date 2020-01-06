@@ -290,20 +290,20 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .gridItem {
-    width: 170px;
+    width: 160px;
     padding: 30px 15px;
     margin: 5px;
   }
   .cItemContainer {
-    width: 170px;
+    width: 160px;
     margin: 5px;
   }
   .vt {
-    width: 170px;
+    width: 160px;
     margin: 5px;
   }
   .vtS {
-    width: 170px;
+    width: 160px;
     margin: 5px;
   }
   .eTitles {

@@ -5,18 +5,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 const NotFoundPage = () => {
-  const { MiniRobot } = useImagedata()
+  const { Yoda } = useImagedata()
   return (
     <Layout>
       <SEO title="404: Not found" />
       <div className="seo">
         <div className="seoImage">
-          <Img fluid={MiniRobot.childImageSharp.fluid}></Img>
+          <Img fluid={Yoda.childImageSharp.fluid}></Img>
+          <p className="copyRight">
+            © Image downloaded from google, i do not own this image.
+          </p>
         </div>
-        <h1>Awww...I'm sorry</h1>
+        <h1>Hello, Yoda my name is</h1>
         <p>
-          Sorry, I couldn't find the page you were looking for.
-          <br /> I suggest that you return to main sections.
+          Sorry, The page i couldn't find you ware looking.
+          <br /> Return to home page i suggest you.
         </p>
         <Link className="seoPageBtn" to="/">
           Go to the main page

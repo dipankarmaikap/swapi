@@ -3,7 +3,6 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Box from "../utils/box"
 const PlanetsPageTemplate = ({ pageContext }) => {
-  console.log(pageContext.planet)
   return (
     <Layout>
       <SEO title={pageContext.planet.name} />

@@ -3,7 +3,6 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Box from "../utils/box"
 const StarshipPageTemplate = ({ pageContext }) => {
-  console.log(pageContext.starship)
   return (
     <Layout>
       <SEO title={pageContext.starship.name} />

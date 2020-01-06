@@ -3,7 +3,6 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Box from "../utils/box"
 const PersonsPageTemplate = ({ pageContext }) => {
-  console.log(pageContext.person)
   return (
     <Layout>
       <SEO title={pageContext.person.name} />

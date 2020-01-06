@@ -16,6 +16,9 @@ export const useImagedata = () => {
         MiniRobot: file(relativePath: { eq: "Mini-Robot.png" }) {
           ...servicesImage
         }
+        Yoda: file(relativePath: { eq: "Yoda.png" }) {
+          ...servicesImage
+        }
       }
     `
   )

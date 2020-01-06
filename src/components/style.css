@@ -168,7 +168,7 @@ body {
   color: white;
 }
 .body {
-  min-height: 70vh;
+  min-height: 75vh;
 }
 footer {
   margin-top: 25px;
@@ -279,7 +279,7 @@ footer {
 }
 
 .seoImage {
-  width: 300px;
+  width: 400px;
 }
 .seoPageBtn {
   text-decoration: none;
@@ -312,4 +312,25 @@ footer {
   .indItems {
     font-size: 24px;
   }
+  .vtTS {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+.seeAll {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.seo {
+  padding-top: 50px;
+}
+.copyRight {
+  display: inline-block;
+  font-size: 13px;
+  color: gray;
+  background-color: rgba(22, 22, 22, 0.116);
+  padding: 2px 10px;
+}
+.hello {
+  margin-top: 50px;
 }

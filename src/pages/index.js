@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <h1 className="hello">Hello Everyone</h1>
     <p>Welcome to my new Gatsby site.</p>
     <div className="aboutProject">
       <h2>About Project</h2>
@@ -14,6 +14,7 @@ const IndexPage = () => (
         cool things. I tried to reuse existing components through out the site.
       </p>
     </div>
+
     <div className="toolsUsed">
       <h3>Tools Used</h3>
       <p>
@@ -37,6 +38,20 @@ const IndexPage = () => (
         </span>
         .
       </p>
+    </div>
+    <div className="todos">
+      <h4>Next Todos</h4>
+      <ul>
+        <li>Add Images for each section</li>
+        <li>Add search functionality</li>
+        <li>Improve the design</li>
+      </ul>
+    </div>
+    <div className="contactMe ">
+      <h2 className="eTitles">Contact Me</h2>
+      <a href="mailto:dipankarmaikap477@gmail.com" target="_top">
+        Email Me
+      </a>
     </div>
   </Layout>
 )

@@ -5,7 +5,6 @@ import Grid from "./grid"
 import SecondGrid from "./second-grid"
 import { randomColors } from "../../templates/utils/helper"
 const FilmsPageTemplate = ({ pageContext }) => {
-  console.log(pageContext.film)
   const [postCount, setPostCount] = useState(8)
   const [postCount2, setPostCount2] = useState(8)
   const [postCount3, setPostCount3] = useState(8)

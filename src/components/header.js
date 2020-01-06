@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
+import { randomColors } from "../templates/utils/helper"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `${randomColors()}`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -27,6 +27,26 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div className="nav itemGrid">
+        <Link className="navLinks" to="/films">
+          Films
+        </Link>
+        <Link className="navLinks" to="/planets">
+          Planets
+        </Link>
+        <Link className="navLinks" to="/species">
+          Species
+        </Link>
+        <Link className="navLinks" to="/characters">
+          characters
+        </Link>
+        <Link className="navLinks" to="/starships">
+          starships
+        </Link>
+        <Link className="navLinks" to="/vehicles">
+          Vehicles
+        </Link>
+      </div>
     </div>
   </header>
 )

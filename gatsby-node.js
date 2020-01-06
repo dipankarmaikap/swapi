@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const createFilms = require("./src/create/createFilms")
+const createCharacters = require("./src/create/createCharacters")
+const createStarships = require("./src/create/createStarships")
+const createVehicles = require("./src/create/createVehicles")
+const createPlanets = require("./src/create/createPlanets")
+const createSpecies = require("./src/create/createSpecies")
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ actions, graphql }) => {
+  await createFilms({ actions, graphql })
+  await createCharacters({ actions, graphql })
+  await createStarships({ actions, graphql })
+  await createVehicles({ actions, graphql })
+  await createPlanets({ actions, graphql })
+  await createSpecies({ actions, graphql })
+}

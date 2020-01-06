@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `STAR WARS`,
+    description: `Website for Star wars fans`,
+    author: `@dipankarmaikap`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +30,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // Simple config, passing URL
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "SWAPI",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "swapi",
+        // Url to query from
+        url: "https://api.graphcms.com/simple/v1/swapi",
+      },
+    },
   ],
 }
